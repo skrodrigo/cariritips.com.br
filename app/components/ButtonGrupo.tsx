@@ -10,7 +10,7 @@ const ButtonGrupo = () => {
         className="flex items-center justify-center gap-5 px-8 py-3 rounded-full text-white text-lg sm:text-xl md:text-2xl font-semibold bg-gradient-to-r from-[#65AF36] to-[#17B121] transition-transform duration-300 hover:scale-105 focus:outline-none"
       >
         Grupo do Telegram
-        <img src="../../telegram.svg" alt="Telegram Icon" className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"/>
+        <img src="../../Telegram.svg" alt="Telegram Icon" className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"/>
       </Link>
     </div>
   )
