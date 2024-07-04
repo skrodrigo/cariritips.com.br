@@ -16,7 +16,7 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <Link href="/">
-            <Image src="/logo.svg" alt="Logo" width={40} height={40} className="w-10 h-10" />
+            <Image src="/logo.svg" alt="Logo" width={40} height={40} className="w-10 h-10" quality={100} />
           </Link>
         </div>
         <div className="hidden md:flex gap-10">

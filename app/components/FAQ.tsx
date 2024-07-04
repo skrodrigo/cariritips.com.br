@@ -7,9 +7,9 @@ interface FAQItemProps {
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => (
   <details className="p-4 border-b" style={{ listStyle: 'none' }}>
-    <summary className="font-semibold flex items-center justify-between cursor-pointer list-none" style={{ listStyle: 'none' }}>
+    <summary className="font-semibold flex items-center justify-between cursor-pointer list-none appearance-none" style={{ listStyle: 'none' }}>
       <span>{question}</span>
-      <img src="../../arrow.svg" alt="Arrow Icon" className="ml-2 w-4 h-4 transition-transform duration-300 details-open:rotate-90"/>
+      <img src="../../arrow.svg" alt="Arrow Icon" className="ml-2 w-4 h-4 transition-transform duration-300 transform rotate-0 details-open:rotate-90"/>
     </summary>
     <p className="mt-2 text-left">{answer}</p>
   </details>
@@ -19,7 +19,7 @@ const FAQ = () => {
   const faqItems = [
     {
       question: "O que é Cariri Tips?",
-      answer: "Cariri Tips é uma plataforma que oferece dicas e informações sobre a região do Cariri."
+      answer: "Cariri Tips é uma plataforma que te ajuda a ser lucrativo no mercado esportivo! Somos especialistas em dicas para Trade Esportivo, oferecendo análises precisas e estratégias vencedoras."
     },
     {
       question: "Como posso participar do grupo no Telegram?",
