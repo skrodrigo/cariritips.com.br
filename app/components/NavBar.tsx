@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <Link href="/">
-            <img src="../../logo.svg" alt="Logo" className="w-10 h-10" />
+            <Image src="/logo.svg" alt="Logo" width={40} height={40} className="w-10 h-10" />
           </Link>
         </div>
         <div className="hidden md:flex gap-10">

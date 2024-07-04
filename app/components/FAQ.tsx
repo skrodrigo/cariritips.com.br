@@ -6,8 +6,8 @@ interface FAQItemProps {
 }
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => (
-  <details className="p-4 border-b">
-    <summary className="font-semibold flex items-center justify-between cursor-pointer list-none">
+  <details className="p-4 border-b" style={{ listStyle: 'none' }}>
+    <summary className="font-semibold flex items-center justify-between cursor-pointer list-none" style={{ listStyle: 'none' }}>
       <span>{question}</span>
       <img src="../../arrow.svg" alt="Arrow Icon" className="ml-2 w-4 h-4 transition-transform duration-300 details-open:rotate-90"/>
     </summary>
