@@ -1,4 +1,5 @@
 import React from 'react';
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
 
 interface FAQItemProps {
   question: string;
@@ -6,13 +7,10 @@ interface FAQItemProps {
 }
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => (
-  <details className="p-4 border-b" style={{ listStyle: 'none' }}>
-    <summary className="font-semibold flex items-center justify-between cursor-pointer list-none appearance-none" style={{ listStyle: 'none' }}>
-      <span>{question}</span>
-      <img src="../../arrow.svg" alt="Arrow Icon" className="ml-2 w-4 h-4 transition-transform duration-300 transform rotate-0 details-open:rotate-90"/>
-    </summary>
-    <p className="mt-2 text-left">{answer}</p>
-  </details>
+  <AccordionItem value={question}>
+    <AccordionTrigger>{question}</AccordionTrigger>
+    <AccordionContent>{answer}</AccordionContent>
+  </AccordionItem>
 );
 
 const FAQ = () => {
@@ -42,9 +40,11 @@ const FAQ = () => {
           <h2 className="text-5xl font-bold text-left mb-8 bg-gradient-to-r from-[#FFFFFF] to-[#17B121] text-transparent bg-clip-text">FAQ</h2>
         </div>
         <div className="space-y-4 w-3/4 mx-auto">
-          {faqItems.map((item, index) => (
-            <FAQItem key={index} question={item.question} answer={item.answer} />
-          ))}
+          <Accordion type="single" collapsible>
+            {faqItems.map((item, index) => (
+              <FAQItem key={index} question={item.question} answer={item.answer} />
+            ))}
+          </Accordion>
         </div>
       </div>
     </div>
@@ -52,4 +52,3 @@ const FAQ = () => {
 };
 
 export default FAQ;
-
