@@ -17,7 +17,7 @@ const FAQ = () => {
   const faqItems = [
     {
       question: "O que é Cariri Tips?",
-      answer: "Cariri Tips é uma plataforma que te ajuda a ser lucrativo no mercado esportivo! Somos especialistas em dicas para Trade Esportivo, oferecendo análises precisas e estratégias vencedoras."
+      answer: "Cariri Tips é uma plataforma que te ajuda a ser lucrativo com futebol e outros esportes! Somos especialistas em operações no Mercado Esportivo, oferecendo análises precisas e estratégias vencedoras."
     },
     {
       question: "Como posso participar do grupo no Telegram?",
