@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,7 +19,7 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <Link href="/">
-            <Image src="/logo.svg" alt="Logo" width={1000} height={1000} className="w-10 h-10" quality={100} />
+            <Image src="/logo.png" alt="Logo" width={1000} height={1000} className="w-12 h-12" quality={100} />
           </Link>
         </div>
         <div className="hidden md:flex gap-10">
@@ -30,13 +33,9 @@ const NavBar = () => {
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
             {isOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
+              <IoClose className="w-8 h-8" />
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
+              <IoMenu className="w-8 h-8" />
             )}
           </button>
         </div>
