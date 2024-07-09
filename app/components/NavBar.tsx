@@ -19,16 +19,16 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <Link href="/">
-            <Image src="/logo.png" alt="Logo" width={1000} height={1000} className="w-12 h-12" quality={100} />
+            <Image src="/logo.png" alt="Logo" width={1000} height={1000} className="w-10 h-10 md:w-12 md:h-12" quality={100} />
           </Link>
         </div>
         <div className="hidden md:flex gap-10">
           <Link href="/" className="text-white font-medium hover:text-[#17B121] transition-colors duration-300 pl-20">Home</Link>
-          <Link href="/grupos" className="text-white font-medium hover:text-[#17B121] transition-colors duration-300">Grupos</Link>
-          <Link href="/sobre" className="text-white font-medium hover:text-[#17B121] transition-colors duration-300">Sobre</Link>
+          <Link href="/" className="text-white font-medium hover:text-[#17B121] transition-colors duration-300">Grupos</Link>
+          <Link href="/" className="text-white font-medium hover:text-[#17B121] transition-colors duration-300">Sobre</Link>
         </div>
         <div className="hidden md:block">
-          <Link href="/contate-nos" className="bg-gradient-to-r from-[#65AF36] to-[#17B121] text-white px-4 py-2 rounded-lg font-medium">Contate-nos</Link>
+          <Link href="/" className="bg-gradient-to-r from-[#65AF36] to-[#17B121] text-white px-4 py-2 rounded-lg font-medium">Contate-nos</Link>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -43,9 +43,9 @@ const NavBar = () => {
       {isOpen && (
         <div className="md:hidden pt-4 md:pt-0">
           <Link href="/" className="block text-white px-4 py-2 font-medium hover:text-[#17B121] transition-colors duration-300">Home</Link>
-          <Link href="/grupos" className="block text-white px-4 py-2 font-medium hover:text-[#17B121] transition-colors duration-300">Grupos</Link>
-          <Link href="/sobre" className="block text-white px-4 py-2 font-medium hover:text-[#17B121] transition-colors duration-300">Sobre</Link>
-          <Link href="/contate-nos" className="block bg-gradient-to-r from-[#65AF36] to-[#17B121] text-white px-4 py-2 rounded mt-2 font-medium">Contate-nos</Link>
+          <Link href="/" className="block text-white px-4 py-2 font-medium hover:text-[#17B121] transition-colors duration-300">Grupos</Link>
+          <Link href="/" className="block text-white px-4 py-2 font-medium hover:text-[#17B121] transition-colors duration-300">Sobre</Link>
+          <Link href="/" className="block bg-gradient-to-r from-[#65AF36] to-[#17B121] text-white px-4 py-2 rounded mt-2 font-medium">Contate-nos</Link>
         </div>
       )}
     </nav>

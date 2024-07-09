@@ -8,8 +8,8 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div className="h-screen relative">
-      <img src="../../bg.png" alt="" className="absolute inset-0 w-full h-screen opacity-10 z-10" />
-      <div className="relative z-10">
+      <img src="../../bg.png" alt="" className="absolute inset-0 w-[1920px] h-screen z-10" />
+      <div className="relative z-10 flex flex-col justify-between h-full">
         <NavBar />
         <ButtonCTA />
         <Title />

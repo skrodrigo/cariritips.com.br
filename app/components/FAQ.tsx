@@ -34,7 +34,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-20 px-4">
+    <div className="container mx-auto my-10 px-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="col-span-1 flex justify-center items-center">
           <h2 className="text-5xl font-bold text-left mb-8 bg-gradient-to-r from-[#FFFFFF] to-[#17B121] text-transparent bg-clip-text">FAQ</h2>
