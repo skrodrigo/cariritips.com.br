@@ -20,16 +20,16 @@ const FAQ = () => {
       answer: "Cariri Tips é uma plataforma que te ajuda a ser lucrativo com futebol e outros esportes! Somos especialistas em operações no Mercado Esportivo, oferecendo análises precisas e estratégias vencedoras."
     },
     {
-      question: "Como posso participar do grupo no Telegram?",
-      answer: "Você pode participar do nosso grupo no Telegram clicando no botão 'Grupo do Telegram' na página inicial."
+      question: "Como posso participar do grupo no WhatsApp?",
+      answer: "Você pode participar do nosso grupo no WhatsApp clicando no botão 'Grupo do WhatsApp' na página inicial."
     },
     {
       question: "O acesso ao grupo é gratuito?",
-      answer: "Sim, o acesso ao nosso grupo no Telegram é totalmente gratuito."
+      answer: "Sim, o acesso ao nosso grupo no WhatsApp é totalmente gratuito."
     },
     {
       question: "Como posso obter mais informações?",
-      answer: "Para mais informações, você pode nos contatar através do nosso site ou participar do nosso grupo no Telegram."
+      answer: "Para mais informações, você pode nos contatar através do nosso site ou participar do nosso grupo no WhatsApp."
     }
   ];
 
