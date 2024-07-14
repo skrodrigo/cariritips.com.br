@@ -4,7 +4,7 @@ const Title = () => (
       Te ajudamos a ser lucrativo <br className="hidden sm:block" /> no mercado esportivo!
     </h1>
     <h2 className="text-xs sm:text-sm md:text-base font-light text-center mt-5">
-      Somos especialistas em dicas para <span className="font-medium">Trade Esportivo</span>, oferecendo análises <br className="hidden sm:block" /> 
+      Somos especialistas em dicas<span className="font-medium"> esportivas</span>, oferecendo análises <br className="hidden sm:block" /> 
       precisas e estratégias vencedoras.
     </h2>
   </div>

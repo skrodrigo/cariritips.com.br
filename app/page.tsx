@@ -4,11 +4,12 @@ import Title from "./components/Title";
 import ButtonGrupo from "./components/ButtonGrupo";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="h-screen relative">
-      <img src="../../bg.png" alt="" className="absolute inset-0 w-[1920px] h-screen z-10" />
+      <Image src="/bg.png" width={1920} height={1080} alt="" priority className="absolute inset-0 w-full h-full z-10" />
       <div className="relative z-10 flex flex-col justify-between h-full">
         <NavBar />
         <ButtonCTA />

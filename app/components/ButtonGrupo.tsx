@@ -11,7 +11,7 @@ const ButtonGrupo = () => {
         href="/" 
         className="flex items-center justify-center gap-5 px-8 py-3 rounded-full text-white text-lg sm:text-xl md:text-2xl font-semibold bg-gradient-to-r from-[#65AF36] to-[#17B121] transition-transform duration-300 hover:scale-105 focus:outline-none"
       >
-        Grupo do Whatsapp
+        Grupo em breve...
         <FaWhatsapp className="w-10 h-10" />
       </Link>
     </div>
